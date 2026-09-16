@@ -1,0 +1,46 @@
+{
+  "sample_size": 500,
+  "recall_at_1": 0.6,
+  "recall_at_3": 0.802,
+  "recall_at_5": 0.854,
+  "mrr": 0.7032,
+  "top_1_intent_consistency": 0.6,
+  "top_3_intent_consistency": 0.802,
+  "sample_failures": [
+    {
+      "query": "My phone keeps showing weird question marks in place of emojis and I\ufe0f have the latest update. This is extremely annoying @user",
+      "gold_intent": "software_update",
+      "top_retrieved_intent": "general_inquiry_feedback",
+      "top_similarity": 0.442,
+      "top_brand_response": "@user Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: [URL]"
+    },
+    {
+      "query": "@user Both. It no longer will connect through USB at all. It connects via BT but it will not play through the speakers.",
+      "gold_intent": "audio_bluetooth",
+      "top_retrieved_intent": "general_inquiry_feedback",
+      "top_similarity": 0.2458,
+      "top_brand_response": "@user Thanks for reaching out. As long as they are Bluetooth capable, then yes. Look here for more details: [URL]"
+    },
+    {
+      "query": "@user when are you fixing this update? I can't even receive phone calls!! this is madness, I have to resort to texting from my laptop #WTF",
+      "gold_intent": "software_update",
+      "top_retrieved_intent": "general_inquiry_feedback",
+      "top_similarity": 0.4063,
+      "top_brand_response": "@user That's not the type of experience that we want you to go through. Here's a helpful article you can check out for that issue: [URL] Let us know if the issue persists."
+    },
+    {
+      "query": "@user Sim e n\u00e3o... [URL]",
+      "gold_intent": "software_update",
+      "top_retrieved_intent": "wifi_cellular",
+      "top_similarity": 0.4137,
+      "top_brand_response": "@user We'd love to help you get pointed in the right direction for help with your SIM card. If you're trying to use a SIM from another carrier, you'll need to contact your original carrier to unlock the iPhone. This link has more info: [URL]"
+    },
+    {
+      "query": "@user seit dem 05.09.17 versuche ich im Rahmen der Garantie mein IPhone 7 Reparieren zu lassen. Bitte helft mir... :(",
+      "gold_intent": "general_inquiry_feedback",
+      "top_retrieved_intent": "software_update",
+      "top_similarity": 0.4961,
+      "top_brand_response": "@user We offer support via Twitter in English. Contact us for help in your preferred language here: [URL]"
+    }
+  ]
+}

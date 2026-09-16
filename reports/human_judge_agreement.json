@@ -1,0 +1,13 @@
+{
+  "sample_size": 50,
+  "llm_vs_human": {
+    "exact_agreement_pct": 46.0,
+    "within_plus_minus_1_pct": 100.0,
+    "pearson_correlation": 1.0,
+    "cohens_kappa_weighted": 0.6479
+  },
+  "inter_human_agreement": {
+    "exact_agreement_pct": 84.0,
+    "cohens_kappa_weighted": 0.9195
+  }
+}

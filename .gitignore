@@ -1,0 +1,35 @@
+# Environment & secrets
+.env
+*.env
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Data directories (do not commit 500MB raw data or large bulk jsonl)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Model weights & vector store serialized artifacts (generated via scripts)
+*.pkl
+*.faiss
+*.index
+
+# IDE
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,32 @@
+# Confidence thresholds for Auto-Handle vs Escalate decisions
+thresholds:
+  # Minimum classifier confidence required to consider auto-handling
+  intent_confidence_min: 0.70
+  
+  # Minimum vector retrieval similarity score required
+  retrieval_similarity_min: 0.55
+  
+  # Minimum composite confidence score (weighted blend)
+  composite_confidence_min: 0.72
+
+weights:
+  intent_confidence_weight: 0.60
+  retrieval_similarity_weight: 0.40
+
+# Mandatory escalation intents regardless of confidence
+mandatory_escalate_intents:
+  - "apple_id_account"
+  - "billing_subscriptions"
+  - "screen_hardware"
+
+# High-risk sensitive keywords that force immediate escalation
+sensitive_risk_keywords:
+  - "stolen"
+  - "hacked"
+  - "unauthorized"
+  - "lawyer"
+  - "attorney"
+  - "police"
+  - "swollen battery"
+  - "smoke"
+  - "fire"

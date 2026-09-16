@@ -1,0 +1,571 @@
+{
+  "dataset_sizes": {
+    "train": 12000,
+    "val": 1500,
+    "test": 1500
+  },
+  "baseline_a_most_frequent": {
+    "accuracy": 0.4373,
+    "macro_precision": 0.0486,
+    "macro_recall": 0.1111,
+    "macro_f1": 0.0676,
+    "weighted_f1": 0.2661,
+    "classification_report": {
+      "app_system_performance": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 95.0
+      },
+      "apple_id_account": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 49.0
+      },
+      "audio_bluetooth": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 39.0
+      },
+      "battery_power": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 130.0
+      },
+      "billing_subscriptions": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 38.0
+      },
+      "general_inquiry_feedback": {
+        "precision": 0.43733333333333335,
+        "recall": 1.0,
+        "f1-score": 0.608534322820037,
+        "support": 656.0
+      },
+      "screen_hardware": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 81.0
+      },
+      "software_update": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 372.0
+      },
+      "wifi_cellular": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 40.0
+      },
+      "accuracy": 0.43733333333333335,
+      "macro avg": {
+        "precision": 0.0485925925925926,
+        "recall": 0.1111111111111111,
+        "f1-score": 0.0676149247577819,
+        "support": 1500.0
+      },
+      "weighted avg": {
+        "precision": 0.19126044444444446,
+        "recall": 0.43733333333333335,
+        "f1-score": 0.26613234384662954,
+        "support": 1500.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        95,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        49,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        130,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        656,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        81,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        372,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        40,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "app_system_performance",
+      "apple_id_account",
+      "audio_bluetooth",
+      "battery_power",
+      "billing_subscriptions",
+      "general_inquiry_feedback",
+      "screen_hardware",
+      "software_update",
+      "wifi_cellular"
+    ]
+  },
+  "baseline_b_tfidf_logistic": {
+    "accuracy": 0.8827,
+    "macro_precision": 0.8902,
+    "macro_recall": 0.6949,
+    "macro_f1": 0.7657,
+    "weighted_f1": 0.8736,
+    "classification_report": {
+      "app_system_performance": {
+        "precision": 0.8311688311688312,
+        "recall": 0.6736842105263158,
+        "f1-score": 0.7441860465116279,
+        "support": 95.0
+      },
+      "apple_id_account": {
+        "precision": 0.9473684210526315,
+        "recall": 0.7346938775510204,
+        "f1-score": 0.8275862068965517,
+        "support": 49.0
+      },
+      "audio_bluetooth": {
+        "precision": 0.9090909090909091,
+        "recall": 0.5128205128205128,
+        "f1-score": 0.6557377049180327,
+        "support": 39.0
+      },
+      "battery_power": {
+        "precision": 0.95,
+        "recall": 0.8769230769230769,
+        "f1-score": 0.912,
+        "support": 130.0
+      },
+      "billing_subscriptions": {
+        "precision": 0.8823529411764706,
+        "recall": 0.39473684210526316,
+        "f1-score": 0.5454545454545454,
+        "support": 38.0
+      },
+      "general_inquiry_feedback": {
+        "precision": 0.8526315789473684,
+        "recall": 0.9878048780487805,
+        "f1-score": 0.9152542372881356,
+        "support": 656.0
+      },
+      "screen_hardware": {
+        "precision": 0.8653846153846154,
+        "recall": 0.5555555555555556,
+        "f1-score": 0.6766917293233082,
+        "support": 81.0
+      },
+      "software_update": {
+        "precision": 0.9278350515463918,
+        "recall": 0.967741935483871,
+        "f1-score": 0.9473684210526315,
+        "support": 372.0
+      },
+      "wifi_cellular": {
+        "precision": 0.8461538461538461,
+        "recall": 0.55,
+        "f1-score": 0.6666666666666666,
+        "support": 40.0
+      },
+      "accuracy": 0.8826666666666667,
+      "macro avg": {
+        "precision": 0.8902206882801182,
+        "recall": 0.6948845432238218,
+        "f1-score": 0.7656606175679445,
+        "support": 1500.0
+      },
+      "weighted avg": {
+        "precision": 0.8841928743126054,
+        "recall": 0.8826666666666667,
+        "f1-score": 0.8736113138733748,
+        "support": 1500.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        64,
+        0,
+        0,
+        2,
+        0,
+        21,
+        4,
+        4,
+        0
+      ],
+      [
+        0,
+        36,
+        1,
+        0,
+        1,
+        8,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        20,
+        0,
+        0,
+        12,
+        2,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        114,
+        0,
+        8,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        15,
+        18,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        648,
+        0,
+        6,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        1,
+        1,
+        29,
+        45,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        0,
+        1,
+        0,
+        7,
+        0,
+        360,
+        1
+      ],
+      [
+        6,
+        0,
+        0,
+        1,
+        0,
+        9,
+        0,
+        2,
+        22
+      ]
+    ],
+    "classes": [
+      "app_system_performance",
+      "apple_id_account",
+      "audio_bluetooth",
+      "battery_power",
+      "billing_subscriptions",
+      "general_inquiry_feedback",
+      "screen_hardware",
+      "software_update",
+      "wifi_cellular"
+    ]
+  },
+  "main_semantic_classifier": {
+    "accuracy": 0.9533,
+    "macro_precision": 0.9326,
+    "macro_recall": 0.9,
+    "macro_f1": 0.915,
+    "weighted_f1": 0.953,
+    "classification_report": {
+      "app_system_performance": {
+        "precision": 0.8979591836734694,
+        "recall": 0.9263157894736842,
+        "f1-score": 0.9119170984455959,
+        "support": 95.0
+      },
+      "apple_id_account": {
+        "precision": 0.9782608695652174,
+        "recall": 0.9183673469387755,
+        "f1-score": 0.9473684210526315,
+        "support": 49.0
+      },
+      "audio_bluetooth": {
+        "precision": 0.9393939393939394,
+        "recall": 0.7948717948717948,
+        "f1-score": 0.8611111111111112,
+        "support": 39.0
+      },
+      "battery_power": {
+        "precision": 0.9185185185185185,
+        "recall": 0.9538461538461539,
+        "f1-score": 0.9358490566037736,
+        "support": 130.0
+      },
+      "billing_subscriptions": {
+        "precision": 0.9696969696969697,
+        "recall": 0.8421052631578947,
+        "f1-score": 0.9014084507042254,
+        "support": 38.0
+      },
+      "general_inquiry_feedback": {
+        "precision": 0.9772727272727273,
+        "recall": 0.9832317073170732,
+        "f1-score": 0.9802431610942249,
+        "support": 656.0
+      },
+      "screen_hardware": {
+        "precision": 0.9113924050632911,
+        "recall": 0.8888888888888888,
+        "f1-score": 0.9,
+        "support": 81.0
+      },
+      "software_update": {
+        "precision": 0.9549071618037135,
+        "recall": 0.967741935483871,
+        "f1-score": 0.9612817089452603,
+        "support": 372.0
+      },
+      "wifi_cellular": {
+        "precision": 0.8461538461538461,
+        "recall": 0.825,
+        "f1-score": 0.8354430379746836,
+        "support": 40.0
+      },
+      "accuracy": 0.9533333333333334,
+      "macro avg": {
+        "precision": 0.932617291237966,
+        "recall": 0.9000409866642374,
+        "f1-score": 0.9149580051035007,
+        "support": 1500.0
+      },
+      "weighted avg": {
+        "precision": 0.9534123152587347,
+        "recall": 0.9533333333333334,
+        "f1-score": 0.9530029598179537,
+        "support": 1500.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        88,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        3,
+        0
+      ],
+      [
+        0,
+        45,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        31,
+        0,
+        0,
+        5,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        124,
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        32,
+        2,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        3,
+        0,
+        645,
+        0,
+        6,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        1,
+        3,
+        72,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        0,
+        4,
+        0,
+        1,
+        3,
+        360,
+        1
+      ],
+      [
+        3,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        33
+      ]
+    ],
+    "classes": [
+      "app_system_performance",
+      "apple_id_account",
+      "audio_bluetooth",
+      "battery_power",
+      "billing_subscriptions",
+      "general_inquiry_feedback",
+      "screen_hardware",
+      "software_update",
+      "wifi_cellular"
+    ]
+  }
+}
