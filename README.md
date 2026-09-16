@@ -17,7 +17,7 @@ This system is an enterprise-grade customer support assistant engineered for hig
 
 ## 2. Architecture Diagram
 
-```mermaid
+
 flowchart TD
     A[Customer Tweet / Inquiry] --> B[Text Cleaner & PII Filter]
     B --> C[Calibrated Semantic Intent Classifier]
