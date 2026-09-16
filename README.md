@@ -19,10 +19,9 @@ This system is an enterprise-grade customer support assistant engineered for hig
 
 
 flowchart TD
-    A[Customer Tweet / Inquiry] --> B[Text Cleaner & PII Filter]
+   A[Customer Tweet / Inquiry] --> B[Text Cleaner & PII Filter]
     B --> C[Calibrated Semantic Intent Classifier]
     B --> D[Historical Vector Store (12k Pairs)]
-    
     C -->|Predicted Intent & Confidence| E[Escalation Policy Engine]
     D -->|Top-3 Evidence & Similarities| E
     
